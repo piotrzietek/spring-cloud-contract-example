@@ -9,5 +9,4 @@ public class SpringCloudContractProducerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringCloudContractProducerApplication.class, args);
 	}
-
 }
