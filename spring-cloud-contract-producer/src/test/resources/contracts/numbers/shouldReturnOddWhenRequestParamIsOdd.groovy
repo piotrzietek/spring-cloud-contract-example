@@ -1,20 +1,22 @@
+package contracts.numbers
+
 import org.springframework.cloud.contract.spec.Contract
 
 Contract.make {
 
-    description "should return even when number input is even"
+    description "should return odd when number input is odd"
 
     request {
         method GET()
         url("/api/validate/number") {
             queryParameters {
-                parameter("number", "2")
+                parameter("number", "1")
             }
         }
     }
 
     response {
-        body("Even")
+        body("Odd")
         status 200
     }
 }
